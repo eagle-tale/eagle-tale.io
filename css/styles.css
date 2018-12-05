@@ -28,7 +28,7 @@ ul {
 /* ヘッダー全体のスタイル */
 header {
   height: 48px;
-  width: 1170px;
+  width: 100%;
   background-color: rgba(33, 175, 255, 0.7);
   position: fixed;
   top: 0;
@@ -87,7 +87,7 @@ header a:hover {
 .top-wrapper {
   padding: 150px 0 150px 0;
   background: linear-gradient(125deg,rgba(9, 255, 193, 0.5),rgba(139, 9, 255, 0.5)), url(../img/top.jpg);
-  background-size: 1180px;
+  background-size: auto 1180px;
   color: white;
   text-align: center;
 }
