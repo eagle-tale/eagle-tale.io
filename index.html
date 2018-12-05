@@ -1,60 +1,45 @@
-<!-- Progateのレッスンを参考に、アメ民のランディングページを作ってみる -->
-
 <!DOCTYPE html>
+<html lang="ja">
 <head>
-	<meta charset="utf-8" />
-	<title>アメリカ民謡研究部</title>
-	<link rel="stylesheet" href="css/styles.css" />
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <meta charset="utf-8" />
+  <title>JavaScript Practice</title>
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background: skyblue;
+      cursor: pointer;
+      transition: 0.8s;
+      margin: 0 8px 8px 0;
+    }
+    .circle {
+      background: pink;
+      border-radius: 50%;
+      transform: rotate(360deg);
+    }
+  </style>
 </head>
-
 <body>
-	<header>
-		<div class="container">
-			<div class="header-left">
-					<a href="#"><span>大谷大学</span><br />アメリカ民謡研究部</a>
-			</div>
-			<div class="header-right">
-				<a href="http://amemin.jimdo.com/">TOP</a>
-				<!-- <ul>
-					<li>
 
-					</li>
-					<li>
-						<a class="btn" href="">ブルーグラスとは</a>
-					</li>
-					<li>
-						<a class="btn" href="">活動紹介</a>
-					</li>
-				</ul> -->
-			</div>
-		</div>
-			<!-- <div class="header-right">
-				<a class="btn twitter" href="#">#</a>
-				<a class="btn facebook" href="#">#</a>
-				<a class="btn youtube" href="#">#</a> -->
-	</header>
-	<div class="top-wrapper">
-		<div class="container">
-			<h1>HELLO, AMEMIN.</h1>
-			<h1>HELLO, BLUEGRASS.</h1>
-			<p>大谷大学アメリカ民謡研究部はブルーグラス音楽を演奏する部活動団体です。</p>
-			<p>楽器初心者にもやさしい環境と個性豊かな部員たちが魅力。</p>
-			<p>さあ、私達と一緒に大学生活を楽しみましょう。LET'S BLUEGRASS!</p>
-			<div class="btn-wrapper">
-				<a href="#" class="btn toDetail">詳細はこちら</a>
-				<p>または各種SNSをCHECK!!</p>
-				<a href="http://www.facebook.com/ameminn/" class="btn facebook" target="_blank"><span class="fab fa-facebook-f"></span>Facebook</a>
-				<a href="https://twitter.com/otani_amemin" class="btn twitter" target="_blank"><span class="fab fa-twitter"></span>Twitter</a>
-			</div>
-		</div>
-	</div>
+  <script type="text/javascript">
+    'use strict';
 
-	<div class="bluegrass-wrapper">
+    for (let i = 0; i< 100; i++) {
+      const div = document.createElement('div');
+      div.classList.add('box');
+      div.addEventListener('click', function() {
+        div.classList.toggle('circle');
+      })
 
-	</div>
-	<div class="activity-wrapper">
+      document.body.appendChild(div);
+    }
 
-	</div>
+  </script>
 </body>
+
+</html>
