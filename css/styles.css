@@ -87,7 +87,8 @@ header a:hover {
 .top-wrapper {
   padding: 150px 0 150px 0;
   background: linear-gradient(125deg,rgba(9, 255, 193, 0.5),rgba(139, 9, 255, 0.5)), url(../img/top.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   text-align: center;
 }
