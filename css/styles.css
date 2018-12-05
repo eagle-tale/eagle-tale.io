@@ -6,6 +6,10 @@
 /*
 font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif; */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN";
@@ -20,7 +24,7 @@ ul {
 }
 
 .container {
-  width: 1170px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -86,7 +90,7 @@ header a:hover {
 
 .top-wrapper {
   padding: 150px 0 150px 0;
-  background: linear-gradient(125deg,rgba(9, 255, 193, 0.5),rgba(139, 9, 255, 0.5)), url(../img/top.jpg);
+  background: linear-gradient(125deg,rgba(9, 255, 193, 0.5),rgba(139, 9, 255, 0.5)), url(../img/top.jpg) no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -94,13 +98,21 @@ header a:hover {
 }
 
 .top-wrapper h1 {
-  opacity: 1;
+  opacity: 0.9;
   font-size: 45px;
   letter-spacing: 5px;
 }
 
 .top-wrapper p {
   opacity: 0.8;
+}
+
+.orange {
+  color: goldenrod;
+}
+
+.blue {
+  color: royalblue;
 }
 
 .btn-wrapper {
