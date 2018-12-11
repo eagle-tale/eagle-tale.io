@@ -3,7 +3,7 @@
 /* ブレイクポイントが1000px以下のときのメディアクエリを設定してください */
 @media (max-width:1000px) {
   /* lessonクラスのCSSを指定してください */
-  .lesson {
+  .role {
     width: 50%;
     margin-bottom: 50px;
   }
@@ -15,7 +15,7 @@
 /* ブレイクポイントが670px以下の時のメディアクエリを設定してください */
 @media (max-width:670px) {
   /* .lessonのwidthを100%に指定してください */
-  .lesson {
+  .role {
     width: 100%;
   }
 
