@@ -190,3 +190,39 @@ header a:hover {
   font-size: 12px;
   color: #b3aeb5;
 }
+
+.guiter {
+  background-image: url(../img/guiter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fiddle {
+  background-image: url(../img/fiddle.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dobro {
+  background-image: url(../img/dobro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banjo {
+  background-image: url(../img/banjo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bass {
+  background-image: url(../img/bass.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mandolin {
+  background-image: url(../img/mandolin.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
