@@ -98,6 +98,9 @@ $palette-amemins-A700: nth($palette-amemins, 14);
 	a {
 		color: #3d7e9a;
 		text-decoration: none;
+		&:hover {
+			color: inherit;
+		}
 	}
 	/* リスト */
 	ul {
@@ -113,6 +116,7 @@ $palette-amemins-A700: nth($palette-amemins, 14);
 		border-radius: 10px;
 		box-shadow: 1px 1px 1px 0px gray;
 		&:hover {
+			color: white;
 			opacity: 1;
 		}
 	}
@@ -206,6 +210,61 @@ header {
 				&:hover {
 					color: inherit;
 				}
+			}
+		}
+	}
+}
+
+/* top-field */
+
+.top-field {
+	background-color: gray;
+	padding-top: 4.5rem;
+	padding-bottom: 2rem;
+	text-align: center;
+	.copy-area {
+		h2 {
+			font-size: 3rem;
+			font-weight: 600;
+		}
+	}
+	.description-area {
+		margin-top: 2rem;
+		display: inline-block;
+		background-color: #fff;
+		padding: 2px 5px 1px 5px;
+		border-radius: 20px;
+		box-shadow: 2px 2px 1px 0px gray;
+		.description {
+			position: relative;
+			margin-bottom: 5px;
+			h2 {
+				display: inline-block;
+				background-color: #fff;
+				padding: 2px 20px;
+				border-radius: 5px;
+				box-shadow: 0px 1px 1px 0px gray;
+				font-size: 1.3rem;
+				line-height: 1.3rem;
+			}
+			p {
+				font-size: 0.9rem;
+				margin: 50px 0;
+			}
+			h3 {
+				font-size: 1.2rem;
+			}
+		}
+		.btns {
+			margin-bottom: 20px;
+			a {
+				margin: 20px 0;
+			}
+			.facebook {
+				margin-left: 10px;
+			}
+			.toDetail {
+				background-color: rgb(255, 191, 0);
 			}
 		}
 	}
