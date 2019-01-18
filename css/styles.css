@@ -73,20 +73,25 @@ header {
       font-weight: bold;
       font-size: 1.8rem;
       line-height: 1rem; }
+      header .header-left .title a:hover {
+        opacity: .9; }
       header .header-left .title a span {
         font-size: 0.8rem;
         color: inherit; }
   header .header-left .sns {
     float: left;
-    margin-left: 30px;
-    line-height: 4.5rem; }
+    margin-left: 50px;
+    line-height: 4.2rem;
+    text-align: center; }
     header .header-left .sns .btn {
-      border-radius: 50%;
-      padding: 0.1rem;
+      display: inline-block;
+      box-sizing: border-box;
+      border: 2px solid white;
+      border-radius: 40%;
       margin: auto 5px;
       opacity: 1.0; }
       header .header-left .sns .btn:hover {
-        opacity: 1;
+        opacity: .9;
         box-shadow: 2px 2px 1px 0px gray; }
     header .header-left .sns i {
       color: inherit;
@@ -103,4 +108,4 @@ header {
         header .header-right li a:hover {
           color: inherit; }
 
-/*# sourceMappingURL=styles2.css.map */
+/*# sourceMappingURL=styles.css.map */
