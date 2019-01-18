@@ -1,228 +1,106 @@
-@font-face {
-  font-family: YuGothicM;
-  src: local("Yu Gothic Medium");
-}
-
-/*
-font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif; */
-
+@charset "UTF-8";
+/* For use in _color-definitions.scss */
+/* global 全体設定 */
 * {
-  box-sizing: border-box;
-}
-
-body {
+  /*  フォントの種類  */
+  font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+  /*  フォントの大きさ */
+  font-size: 16px;
+  /*  フォントの太さ  */
+  font-weight: 500;
+  /*  フォントの色  */
+  color: #333;
+  /* 文字間隔の調整の設定 */
+  letter-spacing: 1.5px;
+  /* 行間の設定 */
+  line-height: 1.75;
+  /* ページ全体の余白の設定 */
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
-}
+  /* 要素の幅と高さの計算方法を指定
+  	border-box: width と height が padding、borderの領域を含んだ指定になる。	marginは含まれない。 */
+  box-sizing: border-box;
+  /* 文字装飾の設定 */
+  /* リンク文字 */
+  /* リスト */
+  /* ボタン関係 */ }
+  * a {
+    color: #3d7e9a;
+    text-decoration: none; }
+  * ul {
+    list-style: none; }
+  * .btn {
+    display: inline-block;
+    color: white;
+    opacity: 0.8;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 0px gray; }
+    * .btn:hover {
+      opacity: 1; }
+  * .twitter {
+    background-color: #55acee; }
+  * .facebook {
+    background-color: #3b5998; }
+  * .youtube {
+    background-color: #FF0000; }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-	list-style: none;
-}
-
+/* container クラス */
 .container {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-}
+  border-radius: 10px; }
 
-h2 {
-  text-align: center;
-  font-weight: normal;
-  font-size: 24px;
-  padding-top: 20px;
-}
-
-h2::after {
-  content: attr(data-subtitle);
-  display: block;
-  font-size: 16px;
-  color: #aaa;
-  padding-top: 10px
-}
-
-/* ヘッダー全体のスタイル */
+/* ヘッダー */
 header {
-  height: 48px;
-  width: 100%;
-  background-color: rgba(33, 175, 255, 0.7);
   position: fixed;
   top: 0;
-  z-index: 10;
-}
+  z-index: 999;
+  height: 4rem;
+  width: 100%;
+  background-color: rgba(78, 160, 255, 0.7);
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.4);
+  /* ヘッダー左側設定 */
+  /* ヘッダー右側設定 */ }
+  header .container {
+    border-radius: 0; }
+  header .header-left a {
+    text-shadow: 1px 1px 2px silver; }
+  header .header-left .title {
+    float: left; }
+    header .header-left .title a {
+      color: #FFF;
+      font-weight: bold;
+      font-size: 1.8rem;
+      line-height: 1rem; }
+      header .header-left .title a span {
+        font-size: 0.8rem;
+        color: inherit; }
+  header .header-left .sns {
+    float: left;
+    margin-left: 30px;
+    line-height: 4.5rem; }
+    header .header-left .sns .btn {
+      border-radius: 50%;
+      padding: 0.1rem;
+      margin: auto 5px;
+      opacity: 1.0; }
+      header .header-left .sns .btn:hover {
+        opacity: 1;
+        box-shadow: 2px 2px 1px 0px gray; }
+    header .header-left .sns i {
+      color: inherit;
+      margin: 0 10px 0 10px;
+      font-size: 1rem; }
+  header .header-right {
+    float: right; }
+    header .header-right li {
+      float: left;
+      line-height: 4rem;
+      margin-right: 8px; }
+      header .header-right li a {
+        color: white; }
+        header .header-right li a:hover {
+          color: inherit; }
 
-header a {
-	color: white;
-  background-color: rgba(255, 255, 255, 0.2);
-  display: block;
-  transiton: all 0.5s;
-}
-
-header a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-/* ヘッダー左側部分 */
-.header-left {
-  float: left;
-}
-
-.header-left a {
-	font-size: 24px;
-  /* 行間 = 48px = ヘッダーの高さ → 文字列を中央に配置 */
-  line-height: 24px;
-  /* padding 上下 0px 左右 25pxずつ */
-  padding: 0px 25px 0px 25px;
-  position: relative;
-}
-
-.header-left span {
-  font-size: 12px;
-  position: absolute;
-}
-
-
-/* ヘッダー右側部分 */
-.header-right {
-  float: right;
-}
-
-/* .header-right li {
-  float: left;
-} */
-
-.header-right a {
-  font-size: 12px;
-  /* 行間 = 48px = ヘッダーの高さ → 文字列を中央に配置 */
-  line-height: 48px;
-  /* padding 上下 0px 左右 25pxずつ */
-  padding: 0px 25px 0px 25px;
-  margin-left: 5px;
-}
-
-.top-wrapper {
-  padding: 150px 0 150px 0;
-  background: linear-gradient(125deg,rgba(139, 9, 255, 0.8),rgba(107, 60, 221, 0.78),rgba(130, 87, 185, 0.5)), url(../img/top.jpg) no-repeat center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-  text-align: center;
-}
-
-.top-wrapper h1 {
-  opacity: 0.9;
-  font-size: 45px;
-  letter-spacing: 5px;
-}
-
-.top-wrapper p {
-  opacity: 0.8;
-}
-
-.orange {
-  color: goldenrod;
-}
-
-.blue {
-  color: royalblue;
-}
-
-.btn-wrapper {
-  margin: 20px 0;
-}
-
-.toDetail {
-  background-color: rgb(255, 191, 0);
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fab {
-  margin-right: 10px;
-}
-
-/* Roles */
-
-.role {
-  float: left;
-  width: 33%;
-  padding: 8px 8px 8px 8px;
-  text-align: center;
-}
-
-.icon {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-  background: skyblue;
-  cursor: pointer;
-  transition: 0.8s;
-  text-align: center;
-
-}
-
-.txt-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 20px;
-  font-size: 12px;
-  color: #b3aeb5;
-}
-
-.guiter {
-  background-image: url(../img/guiter.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.fiddle {
-  background-image: url(../img/fiddle.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.dobro {
-  background-image: url(../img/dobro.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.banjo {
-  background-image: url(../img/banjo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bass {
-  background-image: url(../img/bass.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.mandolin {
-  background-image: url(../img/mandolin.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+/*# sourceMappingURL=styles2.css.map */
