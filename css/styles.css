@@ -251,7 +251,7 @@ section {
   margin: 30px 1.5%;
   float: left;
   width: 30%;
-  height: 500px; }
+  padding-bottom: 30px; }
   .interviews .interview-block img {
     width: 200px; }
 .interviews::after {

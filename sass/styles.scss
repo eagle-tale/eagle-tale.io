@@ -207,6 +207,7 @@ header {
 					color: inherit;
 				}
 			}
+
 			.subtitle {
 				float: right;
 				color: $palette-amemins-A700;
@@ -436,7 +437,7 @@ section {
 		margin: 30px 1.5%;
 		float: left;
 		width: 30%;
-		height: 500px;
+		padding-bottom: 30px;
 		img {
 			width: 200px;
 		}

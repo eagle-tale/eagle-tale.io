@@ -1,12 +1,26 @@
+@media (min-width:670px){
+  .title-sp a {
+    display: none;
+  }
+
+}
+
 /* タブレット向けレイアウト */
 
 /* ブレイクポイントが1000px以下のときのメディアクエリ */
 @media (max-width:1000px) {
-  .role {
+  .roles-field .role-block {
     width: 50%;
     margin-bottom: 50px;
   }
 
+  .events .event {
+    width: 100%;
+  }
+
+  .interviews .interview-block {
+    width: 100%;
+  }
 }
 
 /* スマホ向けレイアウト */
@@ -14,11 +28,39 @@
 /* ブレイクポイントが670px以下の時のメディアクエリ */
 @media (max-width:670px) {
 
+  header {
+    height: 3rem;
+  }
+
+  .title{
+    display: none;
+  }
+
+  .wf-nicomoji { font-family: "Nico Moji"; }
+
+  .title-sp a {
+    width: 100%;
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    float: none;
+  }
+
+  .subtitle {
+    display: none;
+  }
+
   .sns {
     display: none;
   }
+
+  header nav {
+    float: none;
+    display: none;
+  }
   /* .lessonのwidthを100%に指定してください */
-  .role {
+  .roles-field .role-block {
     width: 100%;
   }
 
@@ -35,6 +77,7 @@
 
   /* .facebookにmargin-bottom: 10px;を追加してください */
   .facebook {
+    margin-left: 0 !important;
     margin-bottom: 10px;
   }
 
