@@ -67,6 +67,10 @@ $palette-amemins-A700: nth($palette-amemins, 14);
 /* 説明のフォントの大きさ*/
 $description-font-size: 0.9rem;
 
+/* content-border-radius */
+$content-border-radius: 20px;
+
+
 /* 背景用薄いグレー */
 $light-gray: rgba(215,215,215,1);
 
@@ -91,8 +95,8 @@ $light-gray: rgba(215,215,215,1);
 	display: block;
 	background-color: #fff;
 	padding: 2px 5px 1px 5px;
-	border-radius: 20px;
-	box-shadow: 2px 2px 1px 0px gray;
+	border-radius: $content-border-radius;
+	box-shadow: 0px 2px 1px 0px gray;
 }
 
 /* global 全体設定 */
@@ -175,9 +179,6 @@ $light-gray: rgba(215,215,215,1);
 $header-height: 4.5rem;
 
 header {
-	.container {
-		border-radius: 0;
-	}
 	position: fixed;
 	top: 0;
 	z-index: 999;
@@ -275,7 +276,7 @@ header {
 		display: inline-block;
 		background-color: #fff;
 		padding: 2px 5px 1px 5px;
-		border-radius: 20px;
+		border-radius: $content-border-radius;
 		// border: 4px solid $palette-amemins-100 ;
 		box-shadow: 0px 2px 1px 0px gray;
 		.description {
@@ -346,11 +347,11 @@ section {
 		padding: 15px 20px;
 		display: inline-block;
 		background-color: #fff;
-		border-radius: 20px;
+		border-radius: $content-border-radius;
 		// border: 4px solid $palette-amemins-100 ;
 	}
 	ol {
-		width: 600px;
+		width: 100%;
 		margin: 0 auto;
 	}
 }
@@ -377,10 +378,10 @@ section {
 		padding: 15px 20px;
 		display: inline-block;
 		background-color: #fff;
-		border-radius: 20px;
+		border-radius: $content-border-radius;
 		// border: 4px solid $palette-amemins-100 ;
 	}
-	.details {
+	.club-details {
 		h3, li, p {
 			border-bottom: 2px dashed $palette-ameminp-300;
 		}
@@ -399,5 +400,32 @@ section {
 			margin: 10px auto;
 		}
 
+	}
+}
+
+.events {
+
+
+	.event {
+		margin: 20px auto;
+		padding: 10px 0;
+		width: 30rem;
+		background-color: $palette-amemins-100;
+		border-radius: $content-border-radius;
+		h3 {
+			font-weight: bold;
+			letter-spacing: 8px;
+			border-bottom: 3px dashed white;
+		}
+		p {
+			width: 15rem;
+			display: inline-block;
+			margin: 10px;
+		}
+		h4 {
+			font-size: 0.9rem;
+		}
+		.details {
+		}
 	}
 }

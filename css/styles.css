@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* For use in _color-definitions.scss */
 /* 説明のフォントの大きさ*/
+/* content-border-radius */
 /* 背景用薄いグレー */
 /* 各項目の見出し*/
 /* global 全体設定 */
@@ -69,8 +70,6 @@ header {
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.4);
   /* ヘッダー左側設定 */
   /* ヘッダー右側設定 */ }
-  header .container {
-    border-radius: 0; }
   header .header-left a {
     text-shadow: 1px 1px 2px silver; }
   header .header-left .title {
@@ -189,7 +188,7 @@ section {
     background-color: #fff;
     border-radius: 20px; }
   .features ol {
-    width: 600px;
+    width: 100%;
     margin: 0 auto; }
 
 .roles-field .role-block {
@@ -213,16 +212,33 @@ section {
     display: inline-block;
     background-color: #fff;
     border-radius: 20px; }
-  .club-info .details h3, .club-info .details li, .club-info .details p {
+  .club-info .club-details h3, .club-info .club-details li, .club-info .club-details p {
     border-bottom: 2px dashed #97cdff; }
-  .club-info .details h3 {
+  .club-info .club-details h3 {
     font-weight: bold;
     letter-spacing: 8px; }
-  .club-info .details ul {
+  .club-info .club-details ul {
     padding: 0; }
-  .club-info .details li {
+  .club-info .club-details li {
     line-height: 1.2; }
-  .club-info .details iframe {
+  .club-info .club-details iframe {
     margin: 10px auto; }
+
+.events .event {
+  margin: 20px auto;
+  padding: 10px 0;
+  width: 30rem;
+  background-color: #feeec0;
+  border-radius: 20px; }
+  .events .event h3 {
+    font-weight: bold;
+    letter-spacing: 8px;
+    border-bottom: 3px dashed white; }
+  .events .event p {
+    width: 15rem;
+    display: inline-block;
+    margin: 10px; }
+  .events .event h4 {
+    font-size: 0.9rem; }
 
 /*# sourceMappingURL=styles.css.map */
