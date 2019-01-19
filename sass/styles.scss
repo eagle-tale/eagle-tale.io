@@ -255,6 +255,7 @@ header {
 			}
 		}
 	}
+	@include clearfix;
 }
 
 /* top-field */
@@ -466,4 +467,20 @@ section {
 		border-radius: 0 0 $content-border-radius $content-border-radius;
 	}
 
+}
+
+footer {
+	box-shadow: 0px -5px 1px 1px rgba(0,0,0,0.4) inset;
+	li {
+		float: left;
+		margin-right: 8px;
+		a {
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+	p {
+		float: right
+	}
 }
