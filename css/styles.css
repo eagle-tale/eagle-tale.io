@@ -59,7 +59,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 999;
-  height: 5rem;
+  height: 4.5rem;
   width: 100%;
   background-color: rgba(78, 160, 255, 0.7);
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.4);
@@ -88,7 +88,7 @@ header {
   header .header-left .sns {
     float: left;
     margin-left: 50px;
-    line-height: 80px;
+    line-height: 4.5rem;
     text-align: center; }
     header .header-left .sns .btn {
       display: inline-block;
@@ -109,7 +109,7 @@ header {
     float: right; }
     header .header-right li {
       float: left;
-      line-height: 80px;
+      line-height: 4.5rem;
       margin-right: 8px; }
       header .header-right li a {
         color: white; }
