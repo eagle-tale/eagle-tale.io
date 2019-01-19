@@ -143,10 +143,10 @@ header {
       margin-bottom: 5px;
       padding-top: 10px; }
       .top-field .description-area .description h2 {
-        background-color: #fff;
         font-size: 1.3rem;
-        line-height: 1.75rem;
-        border-bottom: 3px dashed #fbc52c; }
+        font-weight: bold;
+        border-bottom: 3px dashed #fbc52c;
+        line-height: 1.75rem; }
       .top-field .description-area .description p {
         font-size: 0.9rem;
         margin: 50px 0; }
@@ -171,6 +171,7 @@ section {
     margin-bottom: 4.5rem; }
   section h2 {
     font-size: 1.3rem;
+    font-weight: bold;
     border-bottom: 3px dashed #fbc52c; }
   section li {
     margin-top: 10px;
@@ -178,13 +179,18 @@ section {
   section p {
     font-size: 0.9rem; }
 
-.features .container {
-  background-color: #d7d7d7;
-  padding-top: 4.5rem;
-  padding-bottom: 4.5rem; }
-.features ol {
-  width: 600px;
-  margin: 0 auto; }
+.features {
+  background-color: #d7d7d7; }
+  .features .container {
+    margin: 50px 15px;
+    width: unset;
+    padding: 15px 20px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 20px; }
+  .features ol {
+    width: 600px;
+    margin: 0 auto; }
 
 .roles-field .role-block {
   margin: 30px 0;
@@ -197,5 +203,26 @@ section {
   content: "";
   clear: both;
   display: block; }
+
+.club-info {
+  background-color: #d7d7d7; }
+  .club-info .container {
+    margin: 50px 15px;
+    width: unset;
+    padding: 15px 20px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 20px; }
+  .club-info .details h3, .club-info .details li, .club-info .details p {
+    border-bottom: 2px dashed #97cdff; }
+  .club-info .details h3 {
+    font-weight: bold;
+    letter-spacing: 8px; }
+  .club-info .details ul {
+    padding: 0; }
+  .club-info .details li {
+    line-height: 1.2; }
+  .club-info .details iframe {
+    margin: 10px auto; }
 
 /*# sourceMappingURL=styles.css.map */

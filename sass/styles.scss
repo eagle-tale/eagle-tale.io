@@ -81,6 +81,7 @@ $light-gray: rgba(215,215,215,1);
 /* 各項目の見出し*/
 @mixin content-header {
 	font-size: 1.3rem;
+	font-weight: bold;
 	border-bottom: 3px dashed $palette-amemins-500;
 }
 
@@ -282,10 +283,8 @@ header {
 			margin-bottom: 5px;
 			padding-top: 10px;
 			h2 {
-				background-color: #fff;
-				font-size: 1.3rem;
+				@include content-header;
 				line-height: 1.75rem;
-				border-bottom: 3px dashed $palette-amemins-500;
 			}
 			p {
 				font-size: $description-font-size;
@@ -323,6 +322,9 @@ section {
 	h2 {
 		@include content-header;
 	}
+	h3 {
+
+	}
 	li {
 		margin-top: 10px;
 		line-height: 2.75rem;
@@ -337,10 +339,15 @@ section {
 }
 
 .features {
+	background-color: $light-gray;
 	.container {
-		background-color: $light-gray;
-		padding-top: $header-height;
-		padding-bottom: $header-height;
+		margin: 50px 15px;
+		width: unset;
+		padding: 15px 20px;
+		display: inline-block;
+		background-color: #fff;
+		border-radius: 20px;
+		// border: 4px solid $palette-amemins-100 ;
 	}
 	ol {
 		width: 600px;
@@ -360,4 +367,37 @@ section {
 	}
 	@include clearfix;
 
+}
+
+.club-info {
+	background-color: $light-gray;
+	.container {
+		margin: 50px 15px;
+		width: unset;
+		padding: 15px 20px;
+		display: inline-block;
+		background-color: #fff;
+		border-radius: 20px;
+		// border: 4px solid $palette-amemins-100 ;
+	}
+	.details {
+		h3, li, p {
+			border-bottom: 2px dashed $palette-ameminp-300;
+		}
+		h3 {
+			font-weight: bold;
+			letter-spacing: 8px;
+		}
+		ul {
+			padding: 0;
+		}
+		li {
+			line-height: 1.2;
+
+		}
+		iframe {
+			margin: 10px auto;
+		}
+
+	}
 }
