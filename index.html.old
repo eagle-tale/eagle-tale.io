@@ -1,0 +1,167 @@
+<!-- Progateのレッスンを参考に、アメ民のランディングページを作ってみる -->
+
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>アメリカ民謡研究部</title>
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="header-left">
+					<a href="#"><span>大谷大学</span><br />アメリカ民謡研究部</a>
+			</div>
+			<div class="header-right">
+				<a href="http://amemin.jimdo.com/">TOP</a>
+				<!-- <ul>
+					<li>
+
+					</li>
+					<li>
+						<a class="btn" href="">ブルーグラスとは</a>
+					</li>
+					<li>
+						<a class="btn" href="">活動紹介</a>
+					</li>
+				</ul> -->
+			</div>
+		</div>
+			<!-- <div class="header-right">
+				<a class="btn twitter" href="#">#</a>
+				<a class="btn facebook" href="#">#</a>
+				<a class="btn youtube" href="#">#</a> -->
+	</header>
+	<div class="top-wrapper">
+		<div class="container">
+			<h1>HELLO,</br/><span class="orange">AMEMIN.</span></h1>
+			<h1>HELLO,</br/><span class="blue">BLUEGRASS.</span></h1>
+			<p>大谷大学アメリカ民謡研究部は<span class="orange">ブルーグラス音楽を演奏する</span>部活動団体です。</p>
+			<p><span class="orange">楽器初心者にもやさしい環境</span>と<span class="orange">個性豊かな部員たち</span>が魅力。</p>
+			<p>さあ、私達と一緒に大学生活を楽しみましょう！LET'S BLUEGRASS!</p>
+			<div class="btn-wrapper">
+				<a href="#about" class="btn toDetail">詳細はこちら</a>
+				<p>または各種SNSをCHECK!!</p>
+				<a href="http://www.facebook.com/ameminn/" class="btn facebook" target="_blank"><span class="fab fa-facebook-f"></span>Facebook</a>
+				<a href="https://twitter.com/otani_amemin" class="btn twitter" target="_blank"><span class="fab fa-twitter"></span>Twitter</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="role-wrapper">
+		<div class="container">
+			<h2 data-subtitle="- Roles -">楽器紹介</h2>
+			<div class="roles">
+				<div class="role">
+					<div class="icon guiter">
+						<p>
+							Guiter
+						</p>
+					</div>
+					<div class="txt-contents">
+						<p>
+							皆さんお馴染みのギター。ギターには大きく分けて、エレキ・ギターとアコースティック・ギターの二種類がありますが、ブルーグラスでは主にアコースティック・ギターが使われます。中でも、マーティン(Martin)社製のギターが好んで使われます。<br/>
+							ギターのリズムが狂うとバンド全体のリズムが崩れると言ってもいいほど、ブルーグラスでは重要な役割を担っています。
+						</p>
+					</div>
+				</div>
+				<div class="role">
+					<div class="icon bass">
+						<p>
+							Bass
+						</p>
+					</div>
+					<div class="txt-contents">
+						<p>
+							皆さんお馴染みのベースです。ベースにも、エレキ・ベースとウッド・ベースの二種類あり、ブルーグラスではウッド・ベースの方が好んで使われます。というのも、ブルーグラスはもともと電子楽器を使わずに演奏されるのが普通で、その昔「オズボーン・ブラザーズ」というバンドが初めて電子楽器を導入した楽曲（「Rocky Top」など）を発表した時は、大きな物議を交わしたそうです。<br/>
+							ちなみに、ブルーグラスで使われる楽器の中で一番大きいため、持ち運びには苦労します。
+						</p>
+					</div>
+				</div>
+				<div class="role">
+					<div class="icon dobro">
+						<p>
+							Dobro
+						</p>
+					</div>
+					<div class="txt-contents">
+						<p>
+
+						</p>
+					</div>
+				</div>
+				<div class="role">
+					<div class="icon mandolin">
+						<p>
+							Mandolin
+						</p>
+					</div>
+					<div class="txt-contents">
+						<p>
+
+						</p>
+					</div>
+				</div>
+				<div class="role">
+					<div class="icon banjo">
+						<p>
+							Banjo
+						</p>
+					</div>
+					<div class="txt-contents">
+						<p>
+
+						</p>
+					</div>
+				</div>
+				<div class="role">
+					<div class="icon fiddle">
+						<p>
+							Fiddle
+						</p>
+					</div>
+					<div class="txt-contents">
+						<p>
+
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="activity-wrapper">
+		<div class="container">
+			<h2 data-subtitle="- Activities -">活動紹介</h2>
+				<div class="activity">
+					<p>
+						いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。
+					</p>
+				</div>
+		</div>
+	</div>
+	<div class="about-wrapper">
+		<div class="container">
+			<h2 id="about" data-subtitle="- About -">アメ民とは</h2>
+				<div>
+					<p>
+						いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。いろいろあるよ。
+					</p>
+				</div>
+			<div>
+
+			</div>
+		</div>
+	</div>
+	<div class="location-wrapper">
+		<div class="container">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d816.6503483533701!2d135.7599183292506!3d35.0417005987718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001080fc76bc63b%3A0x77ec3859dcef540b!2z44CSNjAzLTgxNDMg5Lqs6YO95bqc5Lqs6YO95biC5YyX5Yy65bCP5bGx5LiK57eP55S6IOmDqOWupOajnw!5e0!3m2!1sja!2sjp!4v1547192441177" width="80%" height="80%" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+
+	</div>
+</body>
