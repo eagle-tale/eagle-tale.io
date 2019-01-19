@@ -1,10 +1,13 @@
 @charset "UTF-8";
 /* For use in _color-definitions.scss */
+/* 説明のフォントの大きさ*/
+/* 背景用薄いグレー */
+/* 各項目の見出し*/
 /* global 全体設定 */
 * {
   /*  フォントの種類  */
   font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
-  /*  フォントの大きさ */
+  /*  基本のフォントの大きさ */
   font-size: 16px;
   /*  フォントの太さ  */
   font-weight: 500;
@@ -117,7 +120,7 @@ header {
 
 /* top-field */
 .top-field {
-  background-color: gray;
+  background-color: #d7d7d7;
   padding-top: 4.5rem;
   padding-bottom: 2rem;
   text-align: center; }
@@ -170,6 +173,23 @@ header {
     line-height: 2.75rem; }
 
 .features {
-  padding-top: 4.5rem; }
+  padding-top: 4.5rem;
+  text-align: center; }
+  .features .container {
+    background-color: #d7d7d7;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .features ol {
+    padding: 0 40px;
+    margin: 0 80px;
+    list-style-position: inside; }
+  .features h2 {
+    font-size: 1.3rem;
+    border-bottom: 3px dashed #fbc52c; }
+  .features li {
+    margin-top: 10px;
+    line-height: 2.75rem; }
+  .features p {
+    font-size: 0.9rem; }
 
 /*# sourceMappingURL=styles.css.map */

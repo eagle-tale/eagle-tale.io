@@ -64,6 +64,17 @@ $palette-amemins-A200: nth($palette-amemins, 12);
 $palette-amemins-A400: nth($palette-amemins, 13);
 $palette-amemins-A700: nth($palette-amemins, 14);
 
+/* 説明のフォントの大きさ*/
+$description-font-size: 0.9rem;
+
+/* 背景用薄いグレー */
+$light-gray: rgba(215,215,215,1);
+
+/* 各項目の見出し*/
+@mixin content-header {
+	font-size: 1.3rem;
+	border-bottom: 3px dashed $palette-amemins-500;
+}
 
 @mixin 	basic-field {
 	margin: 0 auto;
@@ -85,8 +96,9 @@ $palette-amemins-A700: nth($palette-amemins, 14);
 								"ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
 								"ＭＳ Ｐゴシック",
 								sans-serif;
-	/*  フォントの大きさ */
+	/*  基本のフォントの大きさ */
 	font-size: 16px;
+
 	/*  フォントの太さ  */
 	font-weight: 500;
 	/*  フォントの色  */
@@ -236,7 +248,7 @@ header {
 /* top-field */
 
 .top-field {
-	background-color: gray;
+	background-color: $light-gray;
 	padding-top: 4.5rem;
 	padding-bottom: 2rem;
 	text-align: center;
@@ -266,7 +278,7 @@ header {
 				border-bottom: 3px dashed $palette-amemins-500;
 			}
 			p {
-				font-size: 0.9rem;
+				font-size: $description-font-size;
 				margin: 50px 0;
 			}
 			h3 {
@@ -296,8 +308,7 @@ header {
 	margin-top: $header-height;
 	text-align: center;
 	h2 {
-		font-size: 1.3rem;
-		border-bottom: 3px dashed $palette-amemins-500;
+		@include content-header;
 	}
 	li {
 		margin-top: 10px;
@@ -308,4 +319,26 @@ header {
 
 .features {
 	padding-top: $header-height;
+	text-align: center;
+	.container {
+		background-color: $light-gray;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	ol {
+		padding : 0 40px;
+		margin: 0 80px;
+		list-style-position: inside;
+	}
+	h2 {
+		@include content-header;
+	}
+	li {
+		margin-top: 10px;
+		line-height: 2.75rem;
+	}
+	p {
+		font-size: $description-font-size;
+
+	}
 }
