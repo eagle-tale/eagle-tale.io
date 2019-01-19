@@ -31,8 +31,10 @@
     text-decoration: none; }
     * a:hover {
       color: inherit; }
-  * ul {
-    list-style: none; }
+  * ul, * ol {
+    list-style-position: inside;
+    list-style: none;
+    padding: 0 40px; }
   * .btn {
     display: inline-block;
     color: white;
@@ -135,7 +137,7 @@ header {
     background-color: #fff;
     padding: 2px 5px 1px 5px;
     border-radius: 20px;
-    box-shadow: 2px 2px 1px 0px gray; }
+    box-shadow: 0px 2px 1px 0px gray; }
     .top-field .description-area .description {
       position: relative;
       margin-bottom: 5px;
@@ -163,31 +165,37 @@ header {
         margin-right: 10px; }
 
 section {
-  margin-top: 4.5rem;
   text-align: center; }
-
-.recommendations h2 {
-  font-size: 1.3rem;
-  border-bottom: 3px dashed #fbc52c; }
-.recommendations li {
-  margin-top: 10px;
-  line-height: 2.75rem; }
+  section .container {
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem; }
+  section h2 {
+    font-size: 1.3rem;
+    border-bottom: 3px dashed #fbc52c; }
+  section li {
+    margin-top: 10px;
+    line-height: 2.75rem; }
+  section p {
+    font-size: 0.9rem; }
 
 .features .container {
   background-color: #d7d7d7;
   padding-top: 4.5rem;
   padding-bottom: 4.5rem; }
 .features ol {
-  padding: 0 40px;
-  margin: 0 80px;
-  list-style-position: inside; }
-.features h2 {
-  font-size: 1.3rem;
-  border-bottom: 3px dashed #fbc52c; }
-.features li {
-  margin-top: 10px;
-  line-height: 2.75rem; }
-.features p {
-  font-size: 0.9rem; }
+  width: 600px;
+  margin: 0 auto; }
+
+.roles-field .role-block {
+  margin: 30px 0;
+  float: left;
+  width: 33%;
+  height: 500px; }
+  .roles-field .role-block img {
+    width: 200px; }
+.roles-field::after {
+  content: "";
+  clear: both;
+  display: block; }
 
 /*# sourceMappingURL=styles.css.map */
