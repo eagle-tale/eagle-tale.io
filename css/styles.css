@@ -51,8 +51,7 @@
 .container {
   width: 100%;
   padding: 0 15px;
-  margin: 0 auto;
-  border-radius: 10px; }
+  margin: 0 auto; }
 
 /* ヘッダー */
 header {
@@ -122,9 +121,11 @@ header {
   padding-top: 4.5rem;
   padding-bottom: 2rem;
   text-align: center; }
-  .top-field .copy-area h2 {
-    font-size: 3rem;
-    font-weight: 600; }
+  .top-field .copy-area {
+    margin: 50px 0; }
+    .top-field .copy-area h2 {
+      font-size: 3rem;
+      font-weight: 600; }
   .top-field .description-area {
     margin-top: 2rem;
     display: inline-block;
@@ -134,15 +135,13 @@ header {
     box-shadow: 2px 2px 1px 0px gray; }
     .top-field .description-area .description {
       position: relative;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      padding-top: 10px; }
       .top-field .description-area .description h2 {
-        display: inline-block;
         background-color: #fff;
-        padding: 2px 20px;
-        border-radius: 5px;
-        box-shadow: 0px 1px 1px 0px gray;
         font-size: 1.3rem;
-        line-height: 1.3rem; }
+        line-height: 1.75rem;
+        border-bottom: 3px dashed #fbc52c; }
       .top-field .description-area .description p {
         font-size: 0.9rem;
         margin: 50px 0; }
@@ -156,5 +155,21 @@ header {
         margin-left: 10px; }
       .top-field .description-area .btns .toDetail {
         background-color: #ffbf00; }
+      .top-field .description-area .btns .fab {
+        margin-left: 5px;
+        margin-right: 10px; }
+
+.recommendations {
+  margin-top: 4.5rem;
+  text-align: center; }
+  .recommendations h2 {
+    font-size: 1.3rem;
+    border-bottom: 3px dashed #fbc52c; }
+  .recommendations li {
+    margin-top: 10px;
+    line-height: 2.75rem; }
+
+.features {
+  padding-top: 4.5rem; }
 
 /*# sourceMappingURL=styles.css.map */
