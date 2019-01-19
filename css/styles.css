@@ -122,7 +122,7 @@ header {
 .top-field {
   background-color: #d7d7d7;
   padding-top: 4.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4.5rem;
   text-align: center; }
   .top-field .copy-area {
     margin: 50px 0; }
@@ -162,34 +162,32 @@ header {
         margin-left: 5px;
         margin-right: 10px; }
 
-.recommendations {
+section {
   margin-top: 4.5rem;
   text-align: center; }
-  .recommendations h2 {
-    font-size: 1.3rem;
-    border-bottom: 3px dashed #fbc52c; }
-  .recommendations li {
-    margin-top: 10px;
-    line-height: 2.75rem; }
 
-.features {
+.recommendations h2 {
+  font-size: 1.3rem;
+  border-bottom: 3px dashed #fbc52c; }
+.recommendations li {
+  margin-top: 10px;
+  line-height: 2.75rem; }
+
+.features .container {
+  background-color: #d7d7d7;
   padding-top: 4.5rem;
-  text-align: center; }
-  .features .container {
-    background-color: #d7d7d7;
-    padding-top: 20px;
-    padding-bottom: 20px; }
-  .features ol {
-    padding: 0 40px;
-    margin: 0 80px;
-    list-style-position: inside; }
-  .features h2 {
-    font-size: 1.3rem;
-    border-bottom: 3px dashed #fbc52c; }
-  .features li {
-    margin-top: 10px;
-    line-height: 2.75rem; }
-  .features p {
-    font-size: 0.9rem; }
+  padding-bottom: 4.5rem; }
+.features ol {
+  padding: 0 40px;
+  margin: 0 80px;
+  list-style-position: inside; }
+.features h2 {
+  font-size: 1.3rem;
+  border-bottom: 3px dashed #fbc52c; }
+.features li {
+  margin-top: 10px;
+  line-height: 2.75rem; }
+.features p {
+  font-size: 0.9rem; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -249,8 +249,8 @@ header {
 
 .top-field {
 	background-color: $light-gray;
-	padding-top: 4.5rem;
-	padding-bottom: 2rem;
+	padding-top: $header-height;
+	padding-bottom: $header-height;
 	text-align: center;
 	.copy-area {
 		margin: 50px 0;
@@ -304,9 +304,12 @@ header {
 	}
 }
 
-.recommendations {
+section {
 	margin-top: $header-height;
 	text-align: center;
+}
+
+.recommendations {
 	h2 {
 		@include content-header;
 	}
@@ -318,12 +321,10 @@ header {
 }
 
 .features {
-	padding-top: $header-height;
-	text-align: center;
 	.container {
 		background-color: $light-gray;
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: $header-height;
+		padding-bottom: $header-height;
 	}
 	ol {
 		padding : 0 40px;
@@ -339,6 +340,9 @@ header {
 	}
 	p {
 		font-size: $description-font-size;
-
 	}
+}
+
+.roles-field {
+
 }
