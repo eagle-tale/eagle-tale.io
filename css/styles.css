@@ -255,4 +255,23 @@ section {
   clear: both;
   display: block; }
 
+.faq {
+  background-color: #d7d7d7; }
+  .faq .container {
+    margin: 50px 2.5%;
+    width: 90%;
+    padding: 15px 20px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 20px; }
+  .faq .faq-block {
+    margin: 10px 0;
+    background-color: #97cdff;
+    border-radius: 20px; }
+  .faq h3 {
+    background-color: white;
+    border-bottom: 3px double #97cdff; }
+  .faq .answer {
+    border-radius: 0 0 20px 20px; }
+
 /*# sourceMappingURL=styles.css.map */

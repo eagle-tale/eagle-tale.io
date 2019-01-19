@@ -442,3 +442,28 @@ section {
 	}
 	@include clearfix;
 }
+
+.faq {
+	background-color: $light-gray;
+	.container {
+		margin: 50px 2.5%;
+		width: 90%;
+		padding: 15px 20px;
+		display: inline-block;
+		background-color: #fff;
+		border-radius: $content-border-radius;
+	}
+	.faq-block {
+		margin: 10px 0;
+		background-color: $palette-ameminp-300;
+		border-radius: $content-border-radius;
+	}
+	h3 {
+		background-color: white;
+		border-bottom: 3px double $palette-ameminp-300;
+	}
+	.answer {
+		border-radius: 0 0 $content-border-radius $content-border-radius;
+	}
+
+}
