@@ -404,8 +404,6 @@ section {
 }
 
 .events {
-
-
 	.event {
 		margin: 20px auto;
 		padding: 10px 0;
@@ -428,4 +426,19 @@ section {
 		.details {
 		}
 	}
+}
+
+.interviews {
+	.interview-block {
+		border-radius: $content-border-radius;
+		background-color: $palette-amemins-100;
+		margin: 30px 1.5%;
+		float: left;
+		width: 30%;
+		height: 500px;
+		img {
+			width: 200px;
+		}
+	}
+	@include clearfix;
 }

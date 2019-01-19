@@ -241,4 +241,18 @@ section {
   .events .event h4 {
     font-size: 0.9rem; }
 
+.interviews .interview-block {
+  border-radius: 20px;
+  background-color: #feeec0;
+  margin: 30px 1.5%;
+  float: left;
+  width: 30%;
+  height: 500px; }
+  .interviews .interview-block img {
+    width: 200px; }
+.interviews::after {
+  content: "";
+  clear: both;
+  display: block; }
+
 /*# sourceMappingURL=styles.css.map */
